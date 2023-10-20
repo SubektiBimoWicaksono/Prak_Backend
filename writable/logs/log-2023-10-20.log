@@ -1,0 +1,166 @@
+WARNING - 2023-10-20 06:10:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+ERROR - 2023-10-20 06:10:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Project-CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Project-CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'backend-kelase', 3306, '', 0)
+#1 C:\Project-CRUD\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Project-CRUD\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Project-CRUD\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Project-CRUD\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Project-CRUD\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Project-CRUD\app\Controllers\ProductController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Project-CRUD\system\CodeIgniter.php(919): App\Controllers\ProductController->readProduct()
+#8 C:\Project-CRUD\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 C:\Project-CRUD\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Project-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Project-CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Project-CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Project-CRUD\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Project-CRUD\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Project-CRUD\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Project-CRUD\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Project-CRUD\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Project-CRUD\app\Controllers\ProductController.php(26): CodeIgniter\BaseModel->findAll()
+#6 C:\Project-CRUD\system\CodeIgniter.php(919): App\Controllers\ProductController->readProduct()
+#7 C:\Project-CRUD\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 C:\Project-CRUD\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Project-CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Project-CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD...')
+#11 {main}
+CRITICAL - 2023-10-20 06:10:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->readProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:11:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:18:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:18:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:18:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:40:52 --> Unclosed '(' on line 16
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:43:36 --> Unclosed '(' on line 16
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:44:59 --> Unclosed '(' on line 16
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:45:37 --> Unclosed '(' on line 16
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:45:44 --> Unclosed '(' on line 16
+in APPPATH\Config\Routes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+CRITICAL - 2023-10-20 06:47:03 --> Trait "codeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:47:16 --> Trait "codeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:49:37 --> Trait "codeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:49:41 --> Trait "codeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:50:06 --> Trait "codeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:51:15 --> Trait "CodeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-20 06:51:56 --> Trait "CodeIgneter\API\ResponseTrait" not found
+in APPPATH\Controllers\ProductController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+WARNING - 2023-10-20 06:52:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:53:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:53:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:54:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:54:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
+WARNING - 2023-10-20 06:54:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
