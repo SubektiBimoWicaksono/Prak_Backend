@@ -1,0 +1,6 @@
+WARNING - 2023-11-02 04:39:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\ProductController::$product is deprecated in APPPATH\Controllers\ProductController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Project-CRUD\\public\\index.php')
